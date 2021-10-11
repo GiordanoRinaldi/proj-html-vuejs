@@ -1,5 +1,5 @@
 <template>
-    <div class="header pt-4">
+    <div class="header-             top pt-4">
         <div class="container-fluid new-container d-flex justify-content-between">
             <div class="logo">
                 <img src="../assets/img/logotype.png" alt="logo">
@@ -15,7 +15,7 @@
 
 <script>
 export default {
-    name: "header",
+    name: "Header",
     data(){
         return{
             navbar:[
@@ -60,10 +60,10 @@ export default {
     }
 
     a {
-        color: $maincolor;
+        color: $aColor;
 
         &:hover {
-            color: $maincolor;
+            color: $aColor;
         }
     }
 

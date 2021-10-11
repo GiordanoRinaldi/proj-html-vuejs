@@ -2,10 +2,12 @@
 @import "~bootstrap/scss/bootstrap";
 /* fine import bootastap*/
 
-/*common*/
+/*import font*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+/*fine iport font*/
 
-#app {
-}
+
+/*common*/
 
 
 a {
@@ -16,4 +18,19 @@ a {
     width: 1600px;
 }
 
-$maincolor: white;
+
+.line {
+    width: 50px;
+    height: 2px;
+    margin-right: 20px;
+    background-color: #39FFBF;
+    display: inline-block;
+}
+
+$buttonColor: #39FFBF;
+
+$aColor: #AAAAAA;
+
+$mainTitlecolor: white;
+
+$principalBackground: #1F1E38
