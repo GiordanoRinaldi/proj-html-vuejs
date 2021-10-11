@@ -1,14 +1,15 @@
 <template>
-    <div class="header">
-        <div class="logo">
-            <img src="../assets/img/logotype.png" alt="logo">
+    <div class="header pt-4">
+        <div class="container-fluid new-container d-flex justify-content-between">
+            <div class="logo">
+                <img src="../assets/img/logotype.png" alt="logo">
+            </div>
+            <div class="navbar">
+                <ul class="d-flex">
+                    <li v-for="(name, index) in navbar" :key="index" class="d-inline-block ms-5"><a :href="name.href">{{name.name}}</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="navbar">
-            <ul>
-                <li v-for="(name, index) in navbar" :key="index"><a :href="name.href">{{name.name}}</a></li>
-            </ul>
-        </div>
-
     </div>
 </template>
 
@@ -48,6 +49,22 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+@import "../assets/style/common";
+    .logo {
+        height: 20px;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    a {
+        color: $maincolor;
+
+        &:hover {
+            color: $maincolor;
+        }
+    }
 
 </style>
