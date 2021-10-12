@@ -89,6 +89,22 @@
         </div>
       </div>
     </section>
+
+    <section class="fourth-section">
+      <div class="container-fourth-section">
+        <div class="d-flex justify-content-between">
+          <div></div>
+          <div>TESTIMONIAL</div>
+          <div class="line"></div>
+        </div>
+        <div class="d-flex justify-content-end">
+          <div>
+            <h2>WHAT'S THE CUSTOMER SAY ABOUT OUR WORK</h2>
+          </div>
+        </div>
+      </div>
+        
+    </section>
   </main>
 </template>
 
@@ -219,6 +235,25 @@ export default {
       img {
       width: 100%;
       }
+    }
+  }
+}
+
+.fourth-section {
+  background-color: $principalBackground;
+  .container-fourth-section{
+    width: 1610px;
+    margin: auto;
+
+    .line{
+      margin-right: 0;
+    }
+    
+
+    h2{
+      text-align: end;
+      font-size: 40px;
+      width: 620px;
     }
   }
 }
