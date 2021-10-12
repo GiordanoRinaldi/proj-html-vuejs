@@ -71,6 +71,24 @@
         <button class="Primarybutton">GET STARTED</button>
       </div>
     </section>
+
+    <section class="third-section">
+      <div class="container-third-section">
+        <div class="mb-3"><span class="line"></span>PROJECT</div>
+        <div class="d-flex mb-4 justify-content-between">
+          <div class="text"><h2>OUR EXPERT TRUSTED CONSULTANS HELP CLIENT</h2></div>
+          <div>
+            <button class="arrow-button me-2"><i class="fas fa-arrow-left"></i></button>
+            <button class="arrow-button"><i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between">
+          <div class="img"><img src="..\assets\img\DRY-1-790x592.jpg" alt=""></div>
+          <div class="img"><img src="..\assets\img\221bf0b7-8134-43bb-936a-5acbe42db64a-790x592.jpg" alt=""></div>
+          <div class="img"><img src="..\assets\img\z1el4c4p-790x592.jpg" alt=""></div>
+        </div>
+      </div>
+    </section>
   </main>
 </template>
 
@@ -168,6 +186,43 @@ export default {
     }
   }
 }
+
+.third-section {
+  background-color: $principalBackground;
+  padding-top: 220px;
+  height: 960px;
+
+  .container-third-section {
+  width: 1610px;
+  margin: auto;
+
+  .text {
+    width: 840px;
+    h2{
+      font-size: 40px;
+    }
+    
+  }
+
+  .arrow-button{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #36354c;
+    border: none;
+    color: white;
+  }
+
+  .img {
+    height: 390px;
+    width: 510px;
+      img {
+      width: 100%;
+      }
+    }
+  }
+}
+
   
   
   
