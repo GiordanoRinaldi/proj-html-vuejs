@@ -11,12 +11,13 @@
               <button class="Primarybutton me-4" >READ MORE</button>
               <button class="playButton align-self-end"><i class="fas fa-caret-right"></i></button>
             </div>
-            
           </div>
-          
         </div>
       </div>
     </div>
+    <main>
+      <Main/>
+    </main>
     
 
   </div>
@@ -24,11 +25,13 @@
 
 <script>
 import Header from "./components/Header.vue"
+import Main from "./components/Main.vue"
 
 export default {
   name: 'App',
   components: {
     Header,
+    Main,
   }
 }
 </script>
@@ -41,7 +44,7 @@ export default {
     font-family: 'Montserrat', sans-serif;
   }
   .section-one {
-    height: 100vh;
+    height: 1000px;
     background-color: $principalBackground;
     background-image: url("./assets/img/portrait-of-young-architect-woman-on-meeting-KFZCE3A.jpg");
     background-repeat: no-repeat;

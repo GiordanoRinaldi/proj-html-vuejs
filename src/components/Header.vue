@@ -1,5 +1,5 @@
 <template>
-    <div class="header-             top pt-4">
+    <div class="header-top pt-4">
         <div class="container-fluid new-container d-flex justify-content-between">
             <div class="logo">
                 <img src="../assets/img/logotype.png" alt="logo">
@@ -60,10 +60,19 @@ export default {
     }
 
     a {
+        position: relative;
         color: $aColor;
-
         &:hover {
-            color: $aColor;
+            color: white;
+            transition: 0.4s;
+        }
+        &:hover:before {
+            position: absolute;
+            top: -35px;
+            content: '';
+            display: inline-block;
+            width: 100%;
+            border: 4px solid white;
         }
     }
 
