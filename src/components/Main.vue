@@ -68,6 +68,7 @@
           <div class="me-5"> <h3 class="secondFont">WE HELP TO DELIVER THE BUSINESS CASE</h3> </div>
           <div class="ms-5">When, while lovely valley teems with vapoure around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a THOUSAND unknown</div>
         </div>
+        <button class="Primarybutton">GET STARTED</button>
       </div>
     </section>
   </main>
@@ -148,6 +149,7 @@ export default {
 
 
   .get-started {
+    position: relative;
     color: $principalBackground;
     height: 330px;
     width: calc(100vw - 10%);
@@ -156,6 +158,13 @@ export default {
       div{
         width: 430px;
       }
+    }
+
+    .Primarybutton{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background-color: #f81d39;
     }
   }
 }
