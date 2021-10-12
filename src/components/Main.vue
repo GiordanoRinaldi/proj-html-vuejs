@@ -1,10 +1,10 @@
 <template>
   <main>
-    <section>
+    <section class="first-section">
       <div class="d-flex align-items-center subtitle">
         <h4 class="secondFont">OUR CONSULTANS CAN HELP YOU</h4><div class="line"></div>
       </div>
-      <div class="row row-cols-2 first-section m-auto">
+      <div class="row row-cols-2 statistics m-auto">
         <div class="sector">
         <div class="img">
           <img src="../assets/img/line-graph.svg" alt="line graph">
@@ -51,6 +51,20 @@
       </div>
       </div>
     </section>
+
+    <section class="second-section">
+      <div class="d-flex align-items-center">
+        <div class="img">
+          <img src="../assets/img/business-people-working-together-on-project-and-5FHSKBL.jpg" alt="">
+        </div>
+        <div class="text">
+          <div><span class="line"></span> ABOUT US</div>
+          <h2 class="secondFont">WE MAKE YOUR STRATEGY WORK</h2>
+          When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a thousand unknown plants are noticed when i hear the buzz of the little world among the stalks, and grow familiar with the countless indescribable forms of the insects and flies, then I feel the presence of the Almighty.
+        </div>
+      </div>
+      
+    </section>
   </main>
 </template>
 
@@ -63,7 +77,12 @@ export default {
 
 <style lang="scss" scoped>
 @import "../assets/style/common";
-  .first-section{
+.first-section {
+  h5 {
+     font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 700;;
+  }
+  .statistics{
     position: relative;
     color: $principalBackground;
     width: 1200px;
@@ -87,6 +106,7 @@ export default {
     }
     }
   }
+
   .subtitle {
     color: $principalBackground;
     margin: 130px 0 150px 350px;
@@ -98,6 +118,33 @@ export default {
       margin-right: 0;
     }
   }
+}
+
+.second-section {
+  background-color: $principalBackground;
+
+  h2{
+    font-size:60px;
+    margin: 40px 0 40px 0
+  }
+
+  .img {
+    width: 1070px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .text {
+    width: 500px;
+    margin-left: 90px ;
+  }
+
+
+}
+  
+  
   
   
 </style>
