@@ -66,7 +66,7 @@
       <div class="get-started d-flex justify-content-center align-items-center">
         <div class="d-flex">
           <div class="me-5"> <h3 class="secondFont">WE HELP TO DELIVER THE BUSINESS CASE</h3> </div>
-          <div class="ms-5">When, while lovely valley teems with vapoure around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a THOUSAND unknown</div>
+          <div class="ms-5">When, while lovely valley teems with vapoure around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a thousand unknown</div>
         </div>
         <button class="Primarybutton">GET STARTED</button>
       </div>
@@ -102,8 +102,52 @@
             <h2>WHAT'S THE CUSTOMER SAY ABOUT OUR WORK</h2>
           </div>
         </div>
+        <div class="testimonials d-flex">
+          <div class="testimon">
+            <div class="text mb-5">
+              When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a thousand unknown plants are noticed when i hear the buzz of the little.
+            </div>
+            <div class="name mb-3">
+              Vera Duncan
+            </div>
+            <div class="society">
+              Amazon.inc
+            </div>
+          </div>
+          <div class="testimon">
+            <div class="text mb-5">
+              When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a thousand unknown plants are noticed when i hear the buzz of the little.
+            </div>
+            <div class="name mb-3">
+              Vera Duncan
+            </div>
+            <div class="society">
+              Amazon.inc
+            </div>
+          </div>
+          <div class="testimon">
+            <div class="text mb-5">
+              When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a thousand unknown plants are noticed when i hear the buzz of the little.
+            </div>
+            <div class="name mb-3">
+              Vera Duncan
+            </div>
+            <div class="society">
+              Amazon.inc
+            </div>
+          </div>
+        </div>
       </div>
         
+    </section>
+
+    <section class="fifth-section">
+      <div class="container-fifth-section">
+        <div><span class="line"></span>BLOG</div>
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>THE RECENT NEWS YOU MUST READ</h2> <button class="Primarybutton">VIEW ALL</button>
+        </div>
+      </div>
     </section>
   </main>
 </template>
@@ -241,6 +285,7 @@ export default {
 
 .fourth-section {
   background-color: $principalBackground;
+  padding-bottom: 220px;
   .container-fourth-section{
     width: 1610px;
     margin: auto;
@@ -255,6 +300,39 @@ export default {
       font-size: 40px;
       width: 620px;
     }
+  }
+
+  .testimonials {
+    color: $principalBackground;
+    height: 365px;
+    width: 1750px;
+    margin-left: auto;
+    background-color: white;
+
+    .testimon {
+      height: 100%;
+      width: 540px;
+      padding-top: 60px;
+      padding-left: 80px;
+      padding-right: 80px;
+
+      &:hover {
+        transition: 0.4s;
+        color: white;
+        background-image: url('../assets/img/oliver-ragfelt-488196-2.jpg');
+      }
+      
+    }
+
+
+  }
+}
+
+.fifth-section {
+  background-color: $principalBackground;
+  .container-fifth-section{
+    width: 1610px;
+    margin: auto;
   }
 }
 
