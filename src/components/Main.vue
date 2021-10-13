@@ -170,6 +170,15 @@
           
       </div>
     </section>
+
+    <section class="sixth-section text-center" >
+      <div class="text">
+        <h2>LET'S TALK ABOUT WORK</h2>
+        <div>Awonderful serenity has taken possession Far far away, behind the word mountains.</div>
+        <button class="Primarybutton mt-3">GET STARTED</button>
+      </div>
+      
+    </section>
   </main>
 </template>
 
@@ -387,6 +396,19 @@ export default {
   
 }
 
+.sixth-section {
+  height: 470px;
+  background-image: url("../assets/img/business-people-working-together-on-project-and-B3MZ4TX.jpg");
+  .text{
+    width: 450px;
+    padding-top: 160px;
+    margin: auto;
+  }
+  .Primarybutton{
+    background-color: $principalBackground;
+    color: white;
+  }
+}
   
   
   
