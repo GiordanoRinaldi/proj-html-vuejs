@@ -147,6 +147,27 @@
         <div class="d-flex justify-content-between align-items-center">
           <h2>THE RECENT NEWS YOU MUST READ</h2> <button class="Primarybutton">VIEW ALL</button>
         </div>
+        <div class="d-flex justify-content-between mt-5">
+          <div>
+            <div class="img">
+              <div class="text">
+                <span class="date">july 4, 2019 </span> <span class="date ms-5">by paul</span>
+                <h4 class="title">Canadian Consulting Firm acquired by UK Giant</h4>
+                <span class="subtitle">When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a ...</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="img">
+              <div class="text">
+                <span class="date">july 4, 2019 </span> <span class="date ms-5">by paul</span>
+                <h4 class="title">Canadian Consulting Firm acquired by UK Giant</h4>
+                <span class="subtitle">When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a ...</span>
+              </div>
+            </div>
+          </div>
+        </div>
+          
       </div>
     </section>
   </main>
@@ -330,10 +351,40 @@ export default {
 
 .fifth-section {
   background-color: $principalBackground;
+  padding-bottom: 340px;
   .container-fifth-section{
     width: 1610px;
     margin: auto;
   }
+  .img{
+    position: relative;
+    width: 780px;
+    height: 585px;
+    background-image: url("../assets/img/startup-business-people-and-strategy-board-PAJ3P9K-1390x1042.jpg");
+    background-size: contain;
+    .text{
+      position: absolute;
+      bottom: -105px;
+      right: 0;
+      width: 620px;
+      height: 325px;
+      background-color: white;
+      padding: 50px 170px 0 90px;
+
+      .date {
+        color: red;
+      }
+      .title{
+        color: $principalBackground;
+        padding: 25px 0 25px 0;
+      }
+      .subtitle {
+        color: $aColor;
+      }
+    }
+  }
+
+  
 }
 
   
