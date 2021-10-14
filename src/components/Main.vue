@@ -83,9 +83,42 @@
           </div>
         </div>
         <div class="d-flex justify-content-between">
-          <div class="img"><img src="..\assets\img\DRY-1-790x592.jpg" alt=""></div>
-          <div class="img"><img src="..\assets\img\221bf0b7-8134-43bb-936a-5acbe42db64a-790x592.jpg" alt=""></div>
-          <div class="img"><img src="..\assets\img\z1el4c4p-790x592.jpg" alt=""></div>
+          <div class="img">
+            <img src="..\assets\img\DRY-1-790x592.jpg" alt="">
+            <div class="info-products d-flex justify-content-between align-items-end">
+              <div>
+                <h4>Purinky Products</h4>
+              <span>uncategorized</span>
+              </div>
+              <div class="button">
+                <button class="plus-info">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="img">
+            <img src="..\assets\img\221bf0b7-8134-43bb-936a-5acbe42db64a-790x592.jpg" alt="">
+            <div class="info-products d-flex justify-content-between align-items-end">
+              <div>
+                <h4>Purinky Products</h4>
+              <span>uncategorized</span>
+              </div>
+              <div class="button">
+                <button class="plus-info">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="img">
+            <img src="..\assets\img\z1el4c4p-790x592.jpg" alt="">
+            <div class="info-products d-flex justify-content-between align-items-end">
+              <div>
+                <h4>Purinky Products</h4>
+              <span>uncategorized</span>
+              </div>
+              <div class="button">
+                <button class="plus-info">+</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -103,7 +136,7 @@
           </div>
         </div>
         <div class="testimonials d-flex">
-          <div class="testimon">
+          <div class="testimon testimon-1">
             <div class="text mb-5">
               When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a thousand unknown plants are noticed when i hear the buzz of the little.
             </div>
@@ -114,7 +147,7 @@
               Amazon.inc
             </div>
           </div>
-          <div class="testimon">
+          <div class="testimon testimon-2">
             <div class="text mb-5">
               When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a thousand unknown plants are noticed when i hear the buzz of the little.
             </div>
@@ -125,7 +158,7 @@
               Amazon.inc
             </div>
           </div>
-          <div class="testimon">
+          <div class="testimon testimon-3">
             <div class="text mb-5">
               When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a thousand unknown plants are noticed when i hear the buzz of the little.
             </div>
@@ -304,11 +337,36 @@ export default {
   }
 
   .img {
+    position: relative;
     height: 390px;
     width: 510px;
       img {
       width: 100%;
       }
+    }
+
+    .info-products {
+      position: absolute;
+      width: 100%;
+      height: 98%;
+      top: 0;
+      left: 0;
+      background-color: rgba(240, 14, 44, 0.8);
+      padding: 0 20px 20px 20px ;
+      opacity: 0;
+      transition: 0.4s;
+      .plus-info{
+        width: 50px;
+        height: 50px;
+        background-color: $principalBackground;
+        font-size: 30px;
+        color: white;
+        border: none;
+      }
+      &:hover{
+        opacity: 1;
+      }
+      
     }
   }
 }
@@ -340,19 +398,46 @@ export default {
     background-color: white;
 
     .testimon {
+      position: relative;
       height: 100%;
       width: 540px;
       padding-top: 60px;
       padding-left: 80px;
       padding-right: 80px;
 
+      .img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        img{
+          width: 100%;
+        }
+      }
+
       &:hover {
         transition: 0.4s;
         color: white;
+        
+      }
+
+      &-1:hover{
         background-image: url('../assets/img/oliver-ragfelt-488196-2.jpg');
+      }
+
+      &-2:hover{
+        background-image: url('../assets/img/oliver-ragfelt-488196-unsplash.jpg');
+      }
+
+      &-3:hover{
+        background-image: url('../assets/img/12679.jpg');
       }
       
     }
+
+    
 
 
   }
@@ -407,6 +492,10 @@ export default {
   .Primarybutton{
     background-color: $principalBackground;
     color: white;
+    &:hover{
+      background-color: $buttonColor;
+      color: $principalBackground;
+    }
   }
 }
   
