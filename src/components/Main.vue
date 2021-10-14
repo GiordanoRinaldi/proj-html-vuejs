@@ -191,7 +191,7 @@
             </div>
           </div>
           <div>
-            <div class="img">
+            <div class="img img-1">
               <div class="text">
                 <span class="date">july 4, 2019 </span> <span class="date ms-5">by paul</span>
                 <h4 class="title">Canadian Consulting Firm acquired by UK Giant</h4>
@@ -476,7 +476,13 @@ export default {
         color: $aColor;
       }
     }
+
+    &-1{
+      background-image: url('../assets/img/business-people-working-together-on-project-and-5FHSKBL-1390.jpg');
+    }
   }
+
+
 
   
 }
