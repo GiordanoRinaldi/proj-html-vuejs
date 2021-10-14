@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="section-one">
-      <Header/>
+      <Header :navbar="navbar"/>
       <div class="jumbotron">
         <div class="container-fluid new-container">
           <div class="text-jumbo">
@@ -19,7 +19,7 @@
       <Main/>
     </main>
     <footer>
-      <Footer/>
+      <Footer :navbar="navbar"/>
     </footer>
   </div>
 </template>
@@ -35,6 +35,42 @@ export default {
     Header,
     Main,
     Footer,
+  },
+  data(){
+    return{
+      navbar:[
+        {
+          name: "HOME",
+          href: "#",
+          active: true
+        },
+        {
+          name: "ABOUT",
+          href: "#",
+          active: false
+        },
+        {
+          name: "PROJECT",
+          href: "#",
+          active: false
+        },
+        {
+          name: "SERVICES",
+          href: "#",
+          active: false
+        },
+        {
+          name: "BLOG",
+          href: "#",
+          active: false
+        },
+        {
+          name: "CONTACT",
+          href: "#",
+          active: false
+        },
+      ]
+    }
   }
 }
 </script>

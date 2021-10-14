@@ -42,36 +42,7 @@
 <script>
 export default {
     name: "Footer",
-    data(){
-        return{
-            navbar:[
-                {
-                    name: "HOME",
-                    href: "#"
-                },
-                {
-                    name: "ABOUT",
-                    href: "#"
-                },
-                {
-                    name: "PROJECT",
-                    href: "#"
-                },
-                {
-                    name: "SERVICES",
-                    href: "#"
-                },
-                {
-                    name: "BLOG",
-                    href: "#"
-                },
-                {
-                    name: "CONTACT",
-                    href: "#"
-                },
-            ]
-        }
-    }
+    props: ["navbar"]
 }
 </script>
 
@@ -90,6 +61,9 @@ footer{
     }
     a{
         color: $aColor;
+        &:hover{
+            color: white;
+        }
     }
     .Copriryght{
         color: $aColor;

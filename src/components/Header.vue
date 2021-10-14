@@ -6,7 +6,7 @@
             </div>
             <div class="navbar">
                 <ul class="d-flex">
-                    <li v-for="(name, index) in navbar" :key="index" class="d-inline-block ms-5"><a :href="name.href">{{name.name}}</a></li>
+                    <li v-for="(name, index) in navbar" :key="index" class="d-inline-block ms-5" ><a :class="name.active == true ? 'active' :  '' " :href="name.href">{{name.name}}</a></li>
                 </ul>
             </div>
         </div>
@@ -16,36 +16,7 @@
 <script>
 export default {
     name: "Header",
-    data(){
-        return{
-            navbar:[
-                {
-                    name: "HOME",
-                    href: "#"
-                },
-                {
-                    name: "ABOUT",
-                    href: "#"
-                },
-                {
-                    name: "PROJECT",
-                    href: "#"
-                },
-                {
-                    name: "SERVICES",
-                    href: "#"
-                },
-                {
-                    name: "BLOG",
-                    href: "#"
-                },
-                {
-                    name: "CONTACT",
-                    href: "#"
-                },
-            ]
-        }
-    }
+    props: [ "navbar"]
 }
 </script>
 
@@ -67,6 +38,17 @@ export default {
             transition: 0.4s;
         }
         &:hover:before {
+            position: absolute;
+            top: -35px;
+            content: '';
+            display: inline-block;
+            width: 100%;
+            border: 4px solid white;
+        }
+    }
+    .active{
+        color: white;
+        &:before {
             position: absolute;
             top: -35px;
             content: '';
